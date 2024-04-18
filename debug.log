@@ -1,0 +1,56 @@
+import sys; print('Python %s on %s' % (sys.version, sys.platform))
+C:\Users\Serhio\PycharmProjects\Seminar_6\.venv\Scripts\python.exe -X pycache_prefix=C:\Users\Serhio\AppData\Local\JetBrains\PyCharm2024.1\cpython-cache "C:/Users/Serhio/AppData/Local/Programs/PyCharm Professional/plugins/python/helpers/pydev/pydevd.py" --multiprocess --qt-support=auto --client 127.0.0.1 --port 59765 --file C:\Users\Serhio\PycharmProjects\Seminar_6\bookparser\runner.py 
+Connected to pydev debugger (build 241.14494.241)
+2024-04-18 12:02:27 [asyncio] DEBUG: Using selector: SelectSelector
+2024-04-18 12:02:27 [scrapy.utils.log] INFO: Scrapy 2.11.1 started (bot: bookparser)
+2024-04-18 12:02:27 [scrapy.utils.log] INFO: Versions: lxml 5.2.1.0, libxml2 2.11.7, cssselect 1.2.0, parsel 1.9.1, w3lib 2.1.2, Twisted 24.3.0, Python 3.12.2 (tags/v3.12.2:6abddd9, Feb  6 2024, 21:26:36) [MSC v.1937 64 bit (AMD64)], pyOpenSSL 24.1.0 (OpenSSL 3.2.1 30 Jan 2024), cryptography 42.0.5, Platform Windows-11-10.0.22000-SP0
+2024-04-18 12:02:27 [scrapy.addons] INFO: Enabled addons:
+[]
+2024-04-18 12:02:27 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2024-04-18 12:02:27 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2024-04-18 12:02:28 [scrapy.extensions.telnet] INFO: Telnet Password: f7e414bd755351a2
+2024-04-18 12:02:29 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2024-04-18 12:02:29 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'bookparser',
+ 'CONCURRENT_REQUESTS': 8,
+ 'DOWNLOAD_DELAY': 0.5,
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'NEWSPIDER_MODULE': 'bookparser.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'SPIDER_MODULES': ['bookparser.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor',
+ 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
+               '(KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36'}
+2024-04-18 12:02:33 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2024-04-18 12:02:33 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2024-04-18 12:02:33 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2024-04-18 12:02:33 [scrapy.core.engine] INFO: Spider opened
+2024-04-18 12:02:34 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-04-18 12:02:34 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2024-04-18 12:02:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://book24.ru/search/?q=%D1%84%D0%B0%D0%BD%D1%82%D0%B0%D1%81%D1%82%D0%B8%D0%BA%D0%B0> (referer: None)
+2024-04-18 12:02:36 [asyncio] ERROR: Exception in callback <Task pending name='Task-1' coro=<SpiderMiddlewareManager.scrape_response.<locals>.process_callback_output() running at C:\Users\Serhio\PycharmProjects\Seminar_6\.venv\Lib\site-packages\scrapy\core\spidermw.py:295> cb=[Deferred.fromFuture.<locals>.adapt() at C:\Users\Serhio\PycharmProjects\Seminar_6\.venv\Lib\site-packages\twisted\internet\defer.py:1249]>()
+handle: <Handle <Task pending name='Task-1' coro=<SpiderMiddlewareManager.scrape_response.<locals>.process_callback_output() running at C:\Users\Serhio\PycharmProjects\Seminar_6\.venv\Lib\site-packages\scrapy\core\spidermw.py:295> cb=[Deferred.fromFuture.<locals>.adapt() at C:\Users\Serhio\PycharmProjects\Seminar_6\.venv\Lib\site-packages\twisted\internet\defer.py:1249]>()>
+Traceback (most recent call last):
+  File "C:\Program Files\Python312\Lib\asyncio\events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+TypeError: 'Task' object is not callable
